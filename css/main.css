@@ -1,3 +1,115 @@
-body {
-  font-family: Palatino;
+*{
+  font-family:'Courier New', Courier, monospace
+  
+}
+
+#reading-list{
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+#form-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.form-item{
+  padding: 20px;
+}
+
+li {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: rgb(176, 196, 144);
+}
+
+h1{
+  margin: 20px;
+  text-decoration: underline;
+}
+
+#save-button{
+  margin: 20px;
+}
+
+#delete-all{
+  margin: 20px;
+}
+
+
+body{
+  background:rgb(210, 223, 188); 
+}
+
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 30s infinite;
+  z-index: -1;
+  animation-timing-function:linear;
+}
+
+.small{
+  width: 300px;
+  height: 300px;
+  left: 400px;
+  bottom: 400px;
+}
+
+.medium{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.large{
+  width: 800px;
+  height: 800px;
+  left: 800px;
+  bottom: -400px;
+}
+
+.x-large{
+  width: 1000px;
+  height: 1000px;
+  left: -300px;
+  bottom: 500px;
+}
+
+.shade1{
+  opacity: 0.3;
+}
+.shade2{
+  opacity: 0.3;
+}
+
+.shade3{
+  opacity: 0.5;
+}
+
+.shade4{
+  opacity: 0.4;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(2);
+  }
+  
+  50%{
+    transform: scale(1.75);
+  }
+
+  100%{
+    transform: scale(2);
+  }
+  
+
 }
